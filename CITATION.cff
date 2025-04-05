@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Impact of a secondary bile acid and vitamin D on detoxification related gene expression within enteric cells in colon cancer"
+authors:
+  - family-names: Juhász
+    given-names: Ágnes Judit
+date-released: 2024-05-01
+version: 1.0.0
+repository-code: https://github.com/agnjuh/rtpcr_detox_genes_vitD_LCA
+license: MIT
