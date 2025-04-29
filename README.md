@@ -1,6 +1,6 @@
 This repository contains the R code developed as part of my dissertation project at Ulster University (2022). The project investigates the role of vitamin D receptor (VDR) and pregnane X receptor (PXR) in the regulation of detoxification genes within intestinal cell lines in response to endocrine and bile acid-based ligand activation.
 
-Project overview Circulating bile acids (BA) play a key role in initiating inflammatory processes and tumorigenesis. Vitamin D is hypothesised to inhibit these pathways through activation of VDR, which, along with PXR, acts as a sensor for endogenous toxic metabolites. This study aims to:
+Project overview: circulating bile acids (BA) play a key role in initiating inflammatory processes and tumorigenesis. Vitamin D is hypothesised to inhibit these pathways through activation of VDR, which, along with PXR, acts as a sensor for endogenous toxic metabolites. This study aims to:
 
 assess VDR and PXR activity through gene expression profiling.
 evaluate the transactivation of metabolic and transporter genes via ligand exposure.
