@@ -24,7 +24,7 @@ Data analysis pipeline The analysis was performed in R using Tidyverse packages.
 - annotating significance levels (*p < 0.05, **p < 0.01, ***p < 0.001) on plots.
 
 Citation:
-This work was conducted by Ágnes Judit Juhász as part of the BSc Hons dissertation in Biomedical Science at Ulster University. If you use this code or data in your work, please cite:
+This work was conducted by Ágnes Judit Juhász as part of the BSc Hons dissertation in Biomedical Science at Ulster University. If you use this code in your work, please cite:
 
 Juhász, Á. J. (2022). Impact of a secondary bile acid and vitamin D on detoxification related gene expression within enteric cells in colon Cancer [GitHub repository]. Retrieved from https://github.com/agnjuh/rtpcr_detox_genes_vitD_LCA
 
