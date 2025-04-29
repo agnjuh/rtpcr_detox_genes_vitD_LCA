@@ -9,7 +9,7 @@ This study aims to:
 - compare basal and induced gene expression in LS180 and Caco-2 intestinal cell lines.
 
   
-Experimental setup Two independent experiments were conducted using RT-qPCR:
+Experimental setup -- two independent experiments were conducted using RT-qPCR:
 
 - experiment 1: single 24-hour ligand exposure,
 - experiment 2: time-course analysis at 12, 24, and 48 hours. Target genes included phase I, II, and III metabolic genes, measured across treated and vehicle control conditions.
