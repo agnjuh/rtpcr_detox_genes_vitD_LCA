@@ -1,37 +1,37 @@
-This repository contains the R code developed as part of my dissertation project at Ulster University (2022). The project investigates the role of vitamin D receptor (VDR) and pregnane X receptor (PXR) in the regulation of detoxification genes within intestinal cell lines in response to endocrine and bile acid-based ligand activation.
+# Impact of a secondary bile acid and Vitamin D on detoxification-related gene expression within enteric cells in colon cancer ![bsc](https://img.shields.io/badge/Dissertation-Completed-brightgreen) ![status](https://img.shields.io/badge/Code-Stable-blue)
+## R scripts supporting a completed investigative dissertation project on bile acid– and vitamin D–regulated detoxification pathways in enteric cells.
 
-Project overview: circulating bile acids (BA) play a key role in initiating inflammatory processes and tumorigenesis. Vitamin D is hypothesised to inhibit these pathways through activation of VDR, which, along with PXR, acts as a sensor for endogenous toxic metabolites.
+This repository contains the full R code used for data preprocessing, statistical analysis, and visualisation in my dissertation research at Ulster University. The study examines how lithocholic acid (LCA), 3-keto-LCA, and vitamin D modulate the expression of detoxification-related genes in intestinal epithelial cell lines relevant to colorectal cancer biology. Specifically, it investigates the activity of the vitamin D receptor (VDR) and pregnane X receptor (PXR)—two nuclear receptors central to bile-acid-dependent detoxification—and their downstream effects on metabolic, transporter, and xenobiotic-processing genes.
 
-This study aims to:
+Circulating bile acids and their metabolic derivatives act as signalling molecules capable of initiating inflammatory, metabolic, and carcinogenic pathways.
+Secondary bile acids such as LCA are potent ligands of nuclear receptors (VDR, PXR, FXR), and dysregulation of these pathways is implicated in colon cancer progression. Vitamin D is hypothesised to counteract these effects by activating VDR-dependent transcriptional networks involved in detoxification, metabolism, and cellular protection.
 
-- assess VDR and PXR activity through gene expression profiling,
-- evaluate the transactivation of metabolic and transporter genes via ligand exposure,
-- compare basal and induced gene expression in LS180 and Caco-2 intestinal cell lines.
+### Objectives
+The study aimed to: quantify VDR- and PXR-mediated transcriptional responses after ligand exposure.
+Assess induction of phase I, II, and III detoxification genes.
+Compare basal vs ligand-induced gene expression in LS180 and Caco-2 cell lines.
+Evaluate temporal dynamics using a single-exposure (24 h) experiment and a 12 h / 24 h / 48 h time-course experiment.
+Experimental design
+Two RT-qPCR-based experiments were performed:
+#### Experiment 1 – Single 24 h exposure
+Cells were treated with:
+Vitamin D (1α,25-dihydroxyvitamin D₃)
+Lithocholic acid (LCA)
+3-keto-LCA
+Vehicle controls
+#### Experiment 2 – Time-course (12, 24, 48 h)
+Ligand exposures were repeated across three time points to capture regulatory kinetics.
 
-  
-Experimental setup -- two independent experiments were conducted using RT-qPCR:
+## Data analysis pipeline
+All analyses were performed in R using the tidyverse ecosystem.
 
-- experiment 1: single 24-hour ligand exposure,
-- experiment 2: time-course analysis at 12, 24, and 48 hours. Target genes included phase I, II, and III metabolic genes, measured across treated and vehicle control conditions.
+Importing and cleaning raw Ct data
+Calculating ΔCt and ΔΔCt
+Computing fold changes relative to vehicle controls
+Statistical testing using paired Student’s t-tests
+Visualisation of gene expression changes with significance annotation (* p < 0.05, ** p < 0.01, *** p < 0.001).
 
-
-Data analysis pipeline The analysis was performed in R using Tidyverse packages. Main steps include:
-
-- processing raw CT values,
-- calculating ΔCT and ΔΔCT using the Livak & Schmittgen (2001) method,
-- visualising fold change in expression relative to vehicle controls,
-- performing paired Student's t-tests for statistical significance,
-- annotating significance levels (*p < 0.05, **p < 0.01, ***p < 0.001) on plots.
-
-Citation:
-This work was conducted by Ágnes Judit Juhász as part of the BSc Hons dissertation in Biomedical Science at Ulster University. If you use this code in your work, please cite:
-
-Juhász, Á. J. (2022). Impact of a secondary bile acid and vitamin D on detoxification related gene expression within enteric cells in colon Cancer [GitHub repository]. Retrieved from https://github.com/agnjuh/rtpcr_detox_genes_vitD_LCA
-
-@misc{juhasz2022detox,
-  author       = {Ágnes Judit Juhász},
-  title        = {Impact of a secondary bile acid and vitamin D on detoxification related gene expression within enteric cells in colon cancer},
-  year         = {2022},
-  url          = {https://github.com/agnjuh/rtpcr_detox_genes_vitD_LCA},
-  note         = {GitHub repository}
-}
+### Citation
+If you use this code or adapt the workflow, please cite:
+Juhász, Á. J. (2022). Impact of a secondary bile acid and vitamin D on detoxification-related gene expression within enteric cells in colon cancer. Ulster University. GitHub repository:
+https://github.com/agnjuh/rtpcr_detox_genes_vitD_LCA
